@@ -189,11 +189,66 @@ When mentioning any person in an article:
 └── .env.example
 ```
 
+## Hashnode Publishing Settings
+
+**Every post published via API MUST include these settings.** Never publish without them.
+
+### Required API settings (PublishPost / UpdatePost)
+```python
+# Tags: use real Hashnode tag IDs (search via API first)
+"tags": [
+    {"slug": "tag-slug", "name": "Tag Name", "id": "hashnode_tag_id"}
+]
+
+# SEO meta tags
+"metaTags": {
+    "title": "Post Title | tail -f thoughts",       # max 60 chars
+    "description": "Compelling meta description..."  # max 160 chars
+}
+
+# Post settings
+"settings": {
+    "enableTableOfContent": True,   # Always enable TOC
+    "delisted": False,              # Keep visible in feeds
+    "slugOverridden": True          # Preserve our custom slug
+}
+
+# After publishing, also apply via UpdatePost:
+"settings": {
+    "pinToBlog": True/False,        # Pin first/featured posts
+    "disableComments": False,       # Keep comments enabled
+    "isTableOfContentEnabled": True # TOC in reading view
+}
+```
+
+### Publishing checklist
+1. Search for valid Hashnode tag IDs before publishing (tags must exist on Hashnode)
+2. Set SEO `metaTags.title` with ` | tail -f thoughts` suffix
+3. Set SEO `metaTags.description` (150-160 chars, different from subtitle)
+4. Enable table of contents
+5. Keep comments enabled
+6. Pin to blog if it's the latest/featured post
+7. Use `scripts/publish.sh` or the API directly — GitHub App is not configured
+
+### Slug behavior
+- Hashnode reserves slugs permanently, even from deleted posts
+- If a slug is taken, choose a new one — never accept auto-appended `-1` suffixes
+- Always set `slugOverridden: True` to prevent Hashnode from modifying it
+
+### Hashnode content policies (avoid AutoMod)
+- **Never publish/delete/republish** — multiple cycles trigger spam detection
+- **Hashnode is developer-focused** — opinion or non-technical posts should use `delisted: True` to hide from community feed (post stays on blog, just not in Hashnode's public feed)
+- **No duplicate content** — never publish same content across accounts
+- **AI-assisted content is allowed** but must be authentic, with the author's voice and ideas. AI enhances, doesn't replace
+- **Publish once, update via API** — use `updatePost` mutation for edits, never delete and recreate
+- **Contact hello@hashnode.com** if a post gets flagged or archived
+
 ## Important Notes
 
 1. **Never commit `.env`** — it contains API tokens. `.gitignore` blocks it.
 2. **Images**: Prefer uploading to Hashnode CDN and using the returned URL. Local `assets/images/` is for drafts only.
-3. **Slug uniqueness**: Every slug must be unique across the publication. Check existing articles before choosing.
-4. **Commit batches**: Hashnode processes up to 10 files per commit. If publishing multiple articles, split into separate commits.
+3. **Slug uniqueness**: Every slug must be unique across the publication. Hashnode reserves slugs permanently — even deleted posts keep their slug.
+4. **Publish via API**: Use `scripts/publish.sh` or the Hashnode GraphQL API. The GitHub App is not configured.
 5. **Frontmatter is sacred**: A missing `saveAsDraft: true` on a draft WILL publish it. Double-check before every commit.
 6. **Use `/blog-post` skill**: It enforces the workflow, voice guidelines, and SEO checklist automatically.
+7. **Always include full settings**: SEO meta tags, table of contents, comments enabled, tags with IDs — never publish a bare post.
