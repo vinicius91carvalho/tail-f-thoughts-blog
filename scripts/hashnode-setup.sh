@@ -122,30 +122,22 @@ else
     echo "$PUB_RESPONSE"
 fi
 
-# --- Step 3: Update publication settings ---
-log_info "Updating publication settings..."
+# --- Step 3: Publication settings reminder ---
+# Note: Hashnode's public GraphQL API does not expose mutations to update
+# publication title, about, or SEO description. These must be set manually
+# via the Hashnode dashboard.
 
-# Bio/about text
-BIO="Engineering Manager na Pagaleve, São Paulo. Desenvolvedor full-cycle apaixonado por JS/TS, React, Node, AWS e arquitetura limpa. AWS Certified Cloud Practitioner. Compartilho aqui o que aprendo, o que deu errado e o que valeu a pena."
-
-UPDATE_QUERY=$(cat <<EOF
-{"query":"mutation { updatePublication(input: { publicationId: \"$HASHNODE_PUBLICATION_ID\", title: \"tail -f thoughts\", descriptionSEO: \"Blog sobre engenharia de software, liderança técnica e arquitetura. Experiências reais, erros honestos e aprendizados práticos.\", about: { markdown: \"$BIO\" } }) { publication { id title } } }"}
-EOF
-)
-
-UPDATE_RESPONSE=$(curl -s -X POST "$HASHNODE_API" \
-    -H "Content-Type: application/json" \
-    -H "Authorization: $HASHNODE_PAT" \
-    -d "$UPDATE_QUERY")
-
-if echo "$UPDATE_RESPONSE" | grep -q '"errors"'; then
-    log_warn "Could not update publication settings (you may need owner permissions)."
-    if [ "$HAS_JQ" = true ]; then
-        echo "$UPDATE_RESPONSE" | jq '.errors'
-    fi
-else
-    log_info "Publication settings updated successfully."
-fi
+echo ""
+log_info "Publication settings to configure manually at:"
+echo "  https://hashnode.com/${USERNAME:-your-username}/dashboard/appearance"
+echo ""
+echo "  Title: tail -f thoughts"
+echo "  SEO Description: Blog sobre engenharia de software, liderança técnica"
+echo "    e arquitetura. Experiências reais, erros honestos e aprendizados práticos."
+echo "  About/Bio: Engineering Manager na Pagaleve, São Paulo. Desenvolvedor"
+echo "    full-cycle apaixonado por JS/TS, React, Node, AWS e arquitetura limpa."
+echo "    AWS Certified Cloud Practitioner. Compartilho aqui o que aprendo,"
+echo "    o que deu errado e o que valeu a pena."
 
 # --- Summary ---
 echo ""
