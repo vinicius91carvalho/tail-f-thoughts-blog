@@ -21,15 +21,15 @@ Eu acompanho o trabalho de duas figuras brasileiras que têm visões completamen
 
 O primeiro é o [Fabio Akita](https://www.akitaonrails.com/), desenvolvedor que dispensa apresentação pra quem tá na área. O Akita é alguém que eu admiro muito. Sempre pragmático, sempre testando antes de opinar. Recentemente ele começou a desenvolver usando modelos de IA e até escreve sobre workflow com essas ferramentas no blog dele. Ele tá metendo a mão na massa, formando opinião na prática. É o tipo de profissional que puxa a comunidade pra cima.
 
-O segundo é o [Miguel Nicolelis](https://pt.wikipedia.org/wiki/Miguel_Nicolelis), neurocientista brasileiro que trabalha na Duke University e é referência em interface cérebro-máquina. O Nicolelis é categórico: IA não é inteligente e nem é artificial. Ponto. Ele continua com essa afirmação até hoje.
+O segundo é o [Miguel Nicolelis](https://pt.wikipedia.org/wiki/Miguel_Nicolelis), neurocientista brasileiro, professor emérito da Duke University e referência em interface cérebro-máquina. O Nicolelis é categórico: IA não é inteligente e nem é artificial. Ponto. Ele continua com essa afirmação até hoje.
 
 E olha, eu respeito a trajetória acadêmica dele. Mas tenho minhas ressalvas.
 
-O Nicolelis critica a IA com muita veemência, critica a Neuralink — empresa da qual, inclusive, um ex-aluno dele faz parte — mas quando olho pro legado prático... fico com um pé atrás. Ele participou daquele projeto icônico do chute da bola na abertura da Copa de 2014, com o exoesqueleto controlado por uma pessoa paraplégica. Foi bonito. Foi emocionante. Mas aquele projeto nunca se tornou comercial. Até hoje, ninguém conseguiu se beneficiar daquela tecnologia no dia a dia. Ficou na demonstração.
+O Nicolelis critica a IA com muita veemência, critica a Neuralink — empresa da qual, inclusive, o [Max Hodak](https://maxhodak.com/), ex-aluno dele na Duke, foi co-fundador e presidente — mas quando olho pro legado prático... fico com um pé atrás. Ele liderou o Walk Again Project, aquele projeto icônico do chute da bola na abertura da Copa de 2014, com o exoesqueleto controlado por uma pessoa paraplégica. Foi bonito. Foi emocionante. Mas aquele projeto nunca se tornou comercial. Até hoje, ninguém conseguiu se beneficiar daquela tecnologia específica no dia a dia. Ficou na demonstração.
 
-E tem a questão da China. O Nicolelis defende muito o modelo chinês, mas — na minha visão — parece esquecer que durante décadas houve muito trabalho em condições desumanas pra que aquela economia crescesse e se tornasse o gigante que é hoje. Não dá pra olhar só pro resultado e ignorar o custo.
+E tem a questão da China. Em podcasts e entrevistas, o Nicolelis costuma criticar os EUA e enaltecer o modelo chinês. Mas — na minha visão — parece esquecer que durante décadas houve muito trabalho em condições desumanas pra que aquela economia crescesse e se tornasse o gigante que é hoje. E não é só questão econômica: é o mesmo país onde o cientista [He Jiankui](https://pt.wikipedia.org/wiki/He_Jiankui) editou geneticamente embriões humanos com CRISPR pra torná-los resistentes ao HIV — sem aprovação ética, sem transparência. Ele ficou desaparecido por um tempo e só foi preso depois de pressão internacional. Não dá pra olhar só pro resultado e ignorar o custo.
 
-Não tô dizendo que ele não tem contribuições relevantes. Tem. Mas entre alguém que critica de longe e alguém que bota a mão na massa, eu sei de quem eu tiro mais aprendizado.
+Não tô dizendo que o Nicolelis não tem contribuições relevantes. Tem. Mas entre alguém que critica de longe e alguém que bota a mão na massa, eu sei de quem eu tiro mais aprendizado.
 
 ## A conversa no WhatsApp que me fez pensar
 
@@ -47,11 +47,11 @@ Savantismo é um tipo de condição, geralmente associada ao autismo, onde a pes
 
 Lembro de dois caras desse documentário.
 
-O primeiro é o **Kim Peek** — o cara que inspirou o filme Rain Man. Kim leu cerca de 10.000 livros na vida. Dez mil. E você podia apontar qualquer página de qualquer um deles e ele te recitava o conteúdo. De cor.
+O primeiro é o **Kim Peek** — o cara que inspirou o filme Rain Man. Kim leu cerca de 12.000 livros na vida. Doze mil. E retinha algo como 98% do conteúdo. De cor.
 
 Mas ele não conseguia ir ao banheiro sem a ajuda do pai.
 
-O segundo é o **Daniel Tammet**, que ao contrário do Kim, não apresentava deficiências no dia a dia. O Daniel recitou mais de 22.000 dígitos do número Pi em Oxford, naquele evento do Dia do Pi que eles fazem lá. E sabe o que é mais doido? Ele falava que via os números como cores que se misturavam. Cada número tinha cor, textura, e acho que até som. Sinestesia combinada com savantismo. Doidera.
+O segundo é o **Daniel Tammet**, que diferente do Kim, consegue viver de forma mais independente — mas não sem dificuldades. Ele tem Asperger, é sensível a multidões, segue rituais rígidos no dia a dia e tem dificuldade pra distinguir esquerda de direita. Mesmo assim, o cara recitou exatamente 22.514 dígitos do número Pi no Museum of the History of Science em Oxford, em março de 2004, num evento beneficente chamado "Pi in the Sky". Foram 5 horas e 9 minutos sem errar um dígito. E sabe o que é mais doido? Ele fala que vê os números como formas tridimensionais com cores e texturas. Cada dígito, do zero ao 10.000, tem uma aparência única pra ele. Sinestesia combinada com savantismo. Doidera.
 
 E aí eu olho pra isso e penso: esse tipo de capacidade que o cérebro humano tem, os computadores estão muito, mas _muito_... mas **muito** longe de alcançar. O nosso cérebro é um computador biológico absurdamente eficiente. Chegar nesse nível é tipo descobrir a origem da vida e conseguir ressuscitar dinossauros extintos. Tá nesse patamar de complexidade.
 

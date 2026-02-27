@@ -121,6 +121,20 @@ graph LR
 ```
 ````
 
+## Fact-Checking Rule
+
+**Every claim, number, date, and person reference in an article MUST be verified before publishing.**
+
+When the author provides facts, anecdotes, or data:
+1. **Research each factual claim** using web search — names, numbers, dates, events, quotes
+2. **If something is inaccurate**: present the correct information to the author and ask whether to:
+   - **Correct it** with the accurate data
+   - **Remove the passage** entirely
+3. **If something is unverifiable** (e.g., personal opinions stated as facts about public figures): flag it and ask the author for their source or whether to adjust the tone
+4. **Never silently correct or publish unchecked claims** — always confirm with the author first
+
+This applies to: historical facts, statistics, dates, people's roles/titles, event details, technical claims, and any assertion that can be objectively verified.
+
 ## Person Mentions Rule
 
 When mentioning any person in an article:

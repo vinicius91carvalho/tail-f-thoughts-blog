@@ -97,12 +97,20 @@ saveAsDraft: true
 
 ### Phase 3: Review
 
-**Goal**: Validate voice authenticity, SEO, and anti-AI patterns.
+**Goal**: Validate facts, voice authenticity, SEO, and anti-AI patterns.
 
-Run through these three checklists on the draft:
+Run through these four checklists on the draft:
+
+#### Fact-check (MANDATORY — do this first)
+- [ ] **Every factual claim verified** via web search (names, numbers, dates, events)
+- [ ] **People's roles/titles are current** and accurate
+- [ ] **Statistics and numbers are correct** (book counts, dates, records, etc.)
+- [ ] **Historical events described accurately** (locations, participants, outcomes)
+- [ ] **Any inaccuracies found**: present to the author with correct data and ask whether to correct or remove the passage
+- [ ] **Unverifiable claims flagged**: ask the author for source or suggest tone adjustment
 
 #### Voice check (from voice-guide.md)
-- [ ] Reads like Vinicius, not like a AI-generated article
+- [ ] Reads like Vinicius, not like an AI-generated article
 - [ ] Has personal anecdote(s)
 - [ ] Uses colloquial expressions naturally
 - [ ] Sentence length varies (short + long)
