@@ -1,13 +1,22 @@
+---
+name: blog-post
+description: Create blog posts for "tail -f thoughts" following established voice, workflow, and quality standards. Use when writing new blog content, creating article outlines, drafting posts, or publishing articles.
+argument-hint: "[topic or title]"
+---
+
 # /blog-post — Blog Post Creation Skill
 
 Create blog posts for "tail -f thoughts" following the established voice, workflow, and quality standards.
 
-## Usage
+The user may provide a topic/title as argument: $ARGUMENTS
 
-```
-/blog-post <topic or title>
-/blog-post          # Interactive — will ask for topic
-```
+## Before you start
+
+Read these files to understand the voice, rules, and examples:
+1. `CLAUDE.md` — Project rules, voice summary, frontmatter rules
+2. [voice-guide.md](voice-guide.md) — Detailed voice patterns and anti-AI checklist
+3. [seo-checklist.md](seo-checklist.md) — SEO validation checklist
+4. [examples/sample-post.md](examples/sample-post.md) — Example post demonstrating all conventions
 
 ## Process
 
@@ -152,7 +161,7 @@ Present review findings to the user. Fix any issues before proceeding.
 ## Files to read before writing
 
 - `CLAUDE.md` — Project rules and voice summary
-- `.claude/skills/blog-post/voice-guide.md` — Detailed voice patterns
-- `.claude/skills/blog-post/seo-checklist.md` — SEO validation
-- `.claude/skills/blog-post/examples/sample-post.md` — Example post
+- [voice-guide.md](voice-guide.md) — Detailed voice patterns
+- [seo-checklist.md](seo-checklist.md) — SEO validation
+- [examples/sample-post.md](examples/sample-post.md) — Example post
 - `templates/article-template.md` — Blank template structure
