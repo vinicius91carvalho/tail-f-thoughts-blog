@@ -15,15 +15,21 @@ Os dados eram de quando o modelo foi treinado. E a ironia? Isso confirma exatame
 
 Mas aí eu pensei: será que é tão simples assim?
 
-## Dois caras que eu admiro, duas posições opostas
+## Duas vozes brasileiras, duas posições opostas
 
-Eu acompanho o trabalho de duas pessoas que respeito muito e que têm visões completamente diferentes sobre IA.
+Eu acompanho o trabalho de duas figuras brasileiras que têm visões completamente diferentes sobre IA.
 
-O primeiro é o [Fabio Akita](https://www.akitaonrails.com/), desenvolvedor brasileiro que dispensa apresentação pra quem tá na área. O Akita sempre foi pragmático. Recentemente ele começou a desenvolver usando modelos de IA e até escreve sobre workflow com essas ferramentas no blog dele. Ele tá metendo a mão na massa, testando, formando opinião na prática.
+O primeiro é o [Fabio Akita](https://www.akitaonrails.com/), desenvolvedor que dispensa apresentação pra quem tá na área. O Akita é alguém que eu admiro muito. Sempre pragmático, sempre testando antes de opinar. Recentemente ele começou a desenvolver usando modelos de IA e até escreve sobre workflow com essas ferramentas no blog dele. Ele tá metendo a mão na massa, formando opinião na prática. É o tipo de profissional que puxa a comunidade pra cima.
 
-O segundo é o [Miguel Nicolelis](https://pt.wikipedia.org/wiki/Miguel_Nicolelis), neurocientista brasileiro que trabalha na Duke University e é referência mundial em interface cérebro-máquina. O Nicolelis é categórico: IA não é inteligente e nem é artificial. Ponto. Ele continua com essa afirmação até hoje.
+O segundo é o [Miguel Nicolelis](https://pt.wikipedia.org/wiki/Miguel_Nicolelis), neurocientista brasileiro que trabalha na Duke University e é referência em interface cérebro-máquina. O Nicolelis é categórico: IA não é inteligente e nem é artificial. Ponto. Ele continua com essa afirmação até hoje.
 
-E o mais louco? Eu acho que os dois têm razão. Cada um no seu recorte.
+E olha, eu respeito a trajetória acadêmica dele. Mas tenho minhas ressalvas.
+
+O Nicolelis critica a IA com muita veemência, critica a Neuralink — empresa da qual, inclusive, um ex-aluno dele faz parte — mas quando olho pro legado prático... fico com um pé atrás. Ele participou daquele projeto icônico do chute da bola na abertura da Copa de 2014, com o exoesqueleto controlado por uma pessoa paraplégica. Foi bonito. Foi emocionante. Mas aquele projeto nunca se tornou comercial. Até hoje, ninguém conseguiu se beneficiar daquela tecnologia no dia a dia. Ficou na demonstração.
+
+E tem a questão da China. O Nicolelis defende muito o modelo chinês, mas — na minha visão — parece esquecer que durante décadas houve muito trabalho em condições desumanas pra que aquela economia crescesse e se tornasse o gigante que é hoje. Não dá pra olhar só pro resultado e ignorar o custo.
+
+Não tô dizendo que ele não tem contribuições relevantes. Tem. Mas entre alguém que critica de longe e alguém que bota a mão na massa, eu sei de quem eu tiro mais aprendizado.
 
 ## A conversa no WhatsApp que me fez pensar
 
@@ -57,7 +63,7 @@ Só algumas pessoas têm esse super poder. Muito poucas. Tipo, bizarramente pouc
 
 E aqui é onde eu começo a discordar — ou pelo menos a expandir — a analogia do meu amigo.
 
-Sim, a IA é "boa de memória". Sim, ela foi treinada por força bruta, bilhões de vezes, e custou caro. Sim, ela não funciona como o nosso cérebro biológico. O Nicolelis tá certo nisso.
+Sim, a IA é "boa de memória". Sim, ela foi treinada por força bruta, bilhões de vezes, e custou caro. Sim, ela não funciona como o nosso cérebro biológico. Nisso, até o Nicolelis tem um ponto.
 
 Mas pra mim, inteligência sempre foi a **capacidade de resolver problemas**. Muitas vezes com muitas restrições. E de maneira criativa.
 
@@ -79,9 +85,9 @@ Mas se a gente usar como ferramenta, como extensão da nossa capacidade de fazer
 
 O Akita entendeu isso. Ele não tá dizendo que a IA é inteligente como um humano. Ele tá usando ela como ferramenta e tirando valor real disso.
 
-O Nicolelis tá certo quando diz que não é inteligência _como a nossa_. O cérebro biológico é outra liga. Kim Peek e Daniel Tammet são a prova viva de que nem começamos a entender o que esse órgão de 1,4kg é capaz de fazer.
+Quando o Nicolelis diz que não é inteligência _como a nossa_, tudo bem — o cérebro biológico é outra liga. Kim Peek e Daniel Tammet são a prova viva de que nem começamos a entender o que esse órgão de 1,4kg é capaz de fazer.
 
-Mas dizer que não tem _nenhum_ tipo de inteligência? Aí eu discordo. Reconhecer padrões, generalizar pra contextos novos (mesmo que imperfeitamente), resolver problemas com restrições — se isso não é um tipo de inteligência, então eu preciso de uma definição nova.
+Mas dizer que não tem _nenhum_ tipo de inteligência? Aí eu discordo. Reconhecer padrões, generalizar pra contextos novos (mesmo que imperfeitamente), resolver problemas com restrições — se isso não é um tipo de inteligência, então eu preciso de uma definição nova. E criticar de longe enquanto outros estão construindo, testando e aprendendo na prática? Pra mim, perde força.
 
 ## Fechando a conta
 
