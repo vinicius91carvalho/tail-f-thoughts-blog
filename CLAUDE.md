@@ -3,7 +3,7 @@
 ## Project Overview
 
 - **Blog name**: tail -f thoughts
-- **URL**: https://tailfthoughts.hashnode.dev
+- **URL**: https://tail-f-thoughts.hashnode.dev
 - **Platform**: Hashnode with GitHub-as-source integration
 - **Languages**: Portuguese (BR) primary, English occasional
 - **Repo purpose**: Source of truth for all blog content — commits to `articles/published/` auto-publish via Hashnode GitHub App
@@ -35,7 +35,7 @@ Every article follows 6 phases. **Never skip the frontmatter rules** — Hashnod
 - Files in `articles/ideas/` MUST have `ignorePost: true`
 - Files in `articles/drafts/` MUST have `saveAsDraft: true`
 - NEVER commit to `articles/published/` without removing `saveAsDraft`
-- Always set `domain: tailfthoughts.hashnode.dev` in frontmatter
+- Always set `domain: tail-f-thoughts.hashnode.dev` in frontmatter
 
 ## Voice & Style Guidelines
 
@@ -93,7 +93,7 @@ title: "Title here"
 subtitle: "Optional subtitle"
 slug: url-friendly-slug
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/...
-domain: tailfthoughts.hashnode.dev
+domain: tail-f-thoughts.hashnode.dev
 tags: tag1, tag2, tag3
 publishedAt: 2026-01-01T00:00:00.000Z
 saveAsDraft: true  # Remove only when publishing

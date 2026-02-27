@@ -3,7 +3,7 @@ title: "O dia que eu derrubei a produção com um console.log"
 subtitle: "Como um log inocente causou um memory leak que tirou nosso serviço do ar por 2 horas"
 slug: derrubei-producao-console-log
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/placeholder
-domain: tailfthoughts.hashnode.dev
+domain: tail-f-thoughts.hashnode.dev
 tags: nodejs, debugging, production, javascript
 publishedAt: 2026-02-01T10:00:00.000Z
 saveAsDraft: true

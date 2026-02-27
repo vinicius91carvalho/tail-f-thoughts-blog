@@ -3,7 +3,7 @@ title: "Título do Artigo"
 subtitle: "Subtítulo opcional que complementa o título"
 slug: titulo-do-artigo
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/placeholder
-domain: tailfthoughts.hashnode.dev
+domain: tail-f-thoughts.hashnode.dev
 tags: tag1, tag2, tag3
 publishedAt: 2026-01-01T00:00:00.000Z
 ignorePost: true

@@ -28,7 +28,7 @@ This skill follows a 4-phase process. **Do not skip phases.** Each phase produce
 ---
 title: "Working Title"
 slug: the-slug
-domain: tailfthoughts.hashnode.dev
+domain: tail-f-thoughts.hashnode.dev
 tags: tag1, tag2, tag3
 ignorePost: true
 ---
@@ -75,7 +75,7 @@ title: "Final Title (50-60 chars)"
 subtitle: "Meta description (150-160 chars)"
 slug: the-slug
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/placeholder
-domain: tailfthoughts.hashnode.dev
+domain: tail-f-thoughts.hashnode.dev
 tags: tag1, tag2, tag3
 publishedAt: <today's date>T10:00:00.000Z
 saveAsDraft: true

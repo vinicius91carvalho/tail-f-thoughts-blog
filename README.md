@@ -7,9 +7,9 @@
 
 ## O que é / What is it
 
-**PT-BR**: Blog pessoal onde compartilho experiências, erros, acertos e reflexões sobre desenvolvimento de software, liderança técnica e arquitetura. Publicado no [Hashnode](https://tailfthoughts.hashnode.dev) com sync automático via GitHub.
+**PT-BR**: Blog pessoal onde compartilho experiências, erros, acertos e reflexões sobre desenvolvimento de software, liderança técnica e arquitetura. Publicado no [Hashnode](https://tail-f-thoughts.hashnode.dev) com sync automático via GitHub.
 
-**EN**: Personal blog sharing experiences, mistakes, wins, and reflections on software development, tech leadership, and architecture. Published on [Hashnode](https://tailfthoughts.hashnode.dev) with automatic GitHub sync.
+**EN**: Personal blog sharing experiences, mistakes, wins, and reflections on software development, tech leadership, and architecture. Published on [Hashnode](https://tail-f-thoughts.hashnode.dev) with automatic GitHub sync.
 
 ## Estrutura / Structure
 

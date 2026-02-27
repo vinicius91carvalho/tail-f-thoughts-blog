@@ -70,13 +70,13 @@ title: "..."           # 50-60 chars
 subtitle: "..."        # 150-160 chars (meta description)
 slug: keyword-slug     # 3-6 words
 cover: https://...     # Hashnode CDN
-domain: tailfthoughts.hashnode.dev
+domain: tail-f-thoughts.hashnode.dev
 tags: tag1, tag2, tag3 # 3-5 tags
 publishedAt: ...       # ISO 8601 date
 ---
 ```
 
-- [ ] `domain` is set to `tailfthoughts.hashnode.dev`
+- [ ] `domain` is set to `tail-f-thoughts.hashnode.dev`
 - [ ] `saveAsDraft: true` removed (for publishing)
 - [ ] `publishedAt` date is correct
 - [ ] No `ignorePost` flag present
