@@ -2,11 +2,9 @@
 title: "IA tem inteligência, mas não é a nossa"
 subtitle: "Sobre savants, Gemini desatualizado, e por que reconhecer padrões talvez seja tudo que importa"
 slug: ia-inteligencia-que-nao-e-nossa
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/placeholder
 domain: tail-f-thoughts.hashnode.dev
 tags: artificial-intelligence, opinion, technology
 publishedAt: 2026-02-27T10:00:00.000Z
-saveAsDraft: true
 ---
 
 Outro dia eu tava conversando com o Gemini sobre um tema que me interessa faz tempo — inteligência artificial, o que é inteligência de verdade, essas coisas. E aí a IA me trouxe uns dados super detalhados, bem articulados, cheios de referência. Lindo.
