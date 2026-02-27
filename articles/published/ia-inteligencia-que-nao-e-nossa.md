@@ -23,13 +23,9 @@ O primeiro é o [Fabio Akita](https://www.akitaonrails.com/), desenvolvedor que 
 
 O segundo é o [Miguel Nicolelis](https://pt.wikipedia.org/wiki/Miguel_Nicolelis), neurocientista brasileiro, professor emérito da Duke University e referência em interface cérebro-máquina. O Nicolelis é categórico: IA não é inteligente e nem é artificial. Ponto. Ele continua com essa afirmação até hoje.
 
-E olha, eu respeito a trajetória acadêmica dele. Mas tenho minhas ressalvas.
+E olha, o Nicolelis tem muita contribuição pra ciência brasileira e mundial. O cara é um dos pioneiros em interface cérebro-máquina — foi um dos primeiros a demonstrar que primatas podiam controlar dispositivos robóticos diretamente com atividade cerebral. Liderou o Walk Again Project, que culminou naquele momento icônico na abertura da Copa de 2014, quando uma pessoa paraplégica deu o chute inicial usando um exoesqueleto controlado pelo cérebro. Publicou centenas de papers, formou gerações de neurocientistas — inclusive o [Max Hodak](https://maxhodak.com/), que saiu do lab dele na Duke pra co-fundar a Neuralink. O legado acadêmico é inegável.
 
-O Nicolelis critica a IA com muita veemência, critica a Neuralink — empresa da qual, inclusive, o [Max Hodak](https://maxhodak.com/), ex-aluno dele na Duke, foi co-fundador e presidente — mas quando olho pro legado prático... fico com um pé atrás. Ele liderou o Walk Again Project, aquele projeto icônico do chute da bola na abertura da Copa de 2014, com o exoesqueleto controlado por uma pessoa paraplégica. Foi bonito. Foi emocionante. Mas aquele projeto nunca se tornou comercial. Até hoje, ninguém conseguiu se beneficiar daquela tecnologia específica no dia a dia. Ficou na demonstração.
-
-E tem a questão da China. Em podcasts e entrevistas, o Nicolelis costuma criticar os EUA e enaltecer o modelo chinês. Mas — na minha visão — parece esquecer que durante décadas houve muito trabalho em condições desumanas pra que aquela economia crescesse e se tornasse o gigante que é hoje. E não é só questão econômica: é o mesmo país onde o cientista [He Jiankui](https://pt.wikipedia.org/wiki/He_Jiankui) editou geneticamente embriões humanos com CRISPR pra torná-los resistentes ao HIV — sem aprovação ética, sem transparência. Ele ficou desaparecido por um tempo e só foi preso depois de pressão internacional. Não dá pra olhar só pro resultado e ignorar o custo.
-
-Não tô dizendo que o Nicolelis não tem contribuições relevantes. Tem. Mas entre alguém que critica de longe e alguém que bota a mão na massa, eu sei de quem eu tiro mais aprendizado.
+Mas quando ele diz que IA não tem nenhum tipo de inteligência... aí eu discordo. E entre alguém que critica de longe e alguém que bota a mão na massa como o Akita, eu sei de quem eu tiro mais aprendizado no dia a dia.
 
 ## A conversa no WhatsApp que me fez pensar
 
