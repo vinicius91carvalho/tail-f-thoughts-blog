@@ -149,7 +149,14 @@ When mentioning any person in an article:
 - **Slug**: Lowercase, hyphenated, 3-6 words, includes keyword
 - **Tags**: 3-5 relevant Hashnode tags
 - **Word count**: 1000-2500 words (sweet spot for dev blogs)
-- **Cover image**: Always include one — Hashnode CDN preferred
+- **Cover image**: Always include one — Hashnode CDN preferred. **Always ask the user to provide the cover image** before finalizing. Never publish with a placeholder URL. When asking, suggest cover image ideas relevant to the article theme and list these sites:
+  - **[Unsplash](https://unsplash.com)** — high quality, free for commercial use
+  - **[Pexels](https://pexels.com)** — free stock photos
+  - **[Pixabay](https://pixabay.com)** — free images, illustrations, vectors
+  - **Hashnode's built-in AI cover generator** (in dashboard editor)
+  - **ChatGPT / DALL-E** — AI-generated custom covers
+  - **[unDraw](https://undraw.co)** — free SVG tech illustrations
+  - **[Storyset](https://storyset.com)** — animated/static tech illustrations
 - **Internal links**: Reference previous articles when relevant
 - **First paragraph**: Must contain the primary keyword naturally
 
@@ -173,15 +180,19 @@ When mentioning any person in an article:
 ├── templates/
 │   └── article-template.md
 ├── scripts/
-│   └── hashnode-setup.sh
+│   ├── hashnode-api.py   # CLI tool for all Hashnode API operations
+│   ├── hashnode-setup.sh
+│   └── publish.sh        # Legacy publish script (prefer hashnode-api.py)
 ├── .claude/
 │   └── skills/
-│       └── blog-post/
-│           ├── SKILL.md          # Main blog-post skill
-│           ├── voice-guide.md    # Detailed voice reference
-│           ├── seo-checklist.md  # SEO validation
-│           └── examples/
-│               └── sample-post.md
+│       ├── blog-post/
+│       │   ├── SKILL.md          # Main blog-post skill
+│       │   ├── voice-guide.md    # Detailed voice reference
+│       │   ├── seo-checklist.md  # SEO validation
+│       │   └── examples/
+│       │       └── sample-post.md
+│       └── hashnode/
+│           └── SKILL.md          # Hashnode API management skill
 ├── CLAUDE.md         # This file
 ├── README.md
 ├── LICENSE
@@ -248,7 +259,8 @@ When mentioning any person in an article:
 1. **Never commit `.env`** — it contains API tokens. `.gitignore` blocks it.
 2. **Images**: Prefer uploading to Hashnode CDN and using the returned URL. Local `assets/images/` is for drafts only.
 3. **Slug uniqueness**: Every slug must be unique across the publication. Hashnode reserves slugs permanently — even deleted posts keep their slug.
-4. **Publish via API**: Use `scripts/publish.sh` or the Hashnode GraphQL API. The GitHub App is not configured.
+4. **Publish via API**: Use `scripts/hashnode-api.py` (preferred) or `scripts/publish.sh`. The GitHub App is not configured. Use `/hashnode` skill for guided API operations.
 5. **Frontmatter is sacred**: A missing `saveAsDraft: true` on a draft WILL publish it. Double-check before every commit.
 6. **Use `/blog-post` skill**: It enforces the workflow, voice guidelines, and SEO checklist automatically.
 7. **Always include full settings**: SEO meta tags, table of contents, comments enabled, tags with IDs — never publish a bare post.
+8. **Use `/hashnode` skill**: For direct API operations — post management, drafts, series, tags, webhooks, redirects. It wraps `scripts/hashnode-api.py` which handles settings automatically.

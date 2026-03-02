@@ -1,14 +1,37 @@
 ---
 name: blog-post
 description: Create blog posts for "tail -f thoughts" following established voice, workflow, and quality standards. Use when writing new blog content, creating article outlines, drafting posts, or publishing articles.
-argument-hint: "[topic or title]"
+argument-hint: "[topic, title, or file path to existing article]"
 ---
 
 # /blog-post — Blog Post Creation Skill
 
 Create blog posts for "tail -f thoughts" following the established voice, workflow, and quality standards.
 
-The user may provide a topic/title as argument: $ARGUMENTS
+The user may provide a topic/title OR a file path as argument: $ARGUMENTS
+
+## Detect input mode
+
+Check the argument to determine which workflow to follow:
+
+- **If the argument is a file path** (ends in `.md`, `.txt`, or starts with `/`, `./`, `~/`, `articles/`): Read the file and use it as the article base. Jump to the **"From existing article"** workflow below.
+- **Otherwise**: Treat it as a topic/title. Follow the standard **"From scratch"** workflow (Phase 1 → 2 → 3 → 4).
+
+---
+
+## From existing article
+
+When the user provides their own article as a file:
+
+1. **Read the file** and analyze its contents
+2. **Ask the user** which series this belongs to (Thoughts, Vibe Coding Engineering, Building in Public)
+3. **Detect the language** (PT or EN) from the content
+4. **Save it as a draft** in `articles/drafts/` with proper Hashnode frontmatter (`saveAsDraft: true`, `domain`, slug, tags, etc.). Preserve the author's content — do not rewrite it.
+5. **Proceed to Phase 3 (Review)** — run all checklists (fact-check, voice, SEO, technical) on the article
+6. Present findings to the user. Suggest improvements but **always ask before changing the author's text** — the author's voice and ideas take priority.
+7. After review is approved, proceed to **Phase 4 (Finalize)**
+
+**Key rule**: The author's original content is the base. Enhance and polish, but never overwrite the author's voice or restructure without permission.
 
 ## Before you start
 
@@ -18,9 +41,9 @@ Read these files to understand the voice, rules, and examples:
 3. [seo-checklist.md](seo-checklist.md) — SEO validation checklist
 4. [examples/sample-post.md](examples/sample-post.md) — Example post demonstrating all conventions
 
-## Process
+## From scratch
 
-This skill follows a 4-phase process. **Do not skip phases.** Each phase produces a file that can be reviewed before proceeding.
+This workflow follows a 4-phase process. **Do not skip phases.** Each phase produces a file that can be reviewed before proceeding.
 
 ---
 
@@ -146,7 +169,12 @@ Present review findings to the user. Fix any issues before proceeding.
 **Goal**: Prepare the article for publishing.
 
 1. Confirm with user that the draft is approved
-2. Ensure cover image is set (remind user to upload to Hashnode CDN if needed)
+2. **Ask the user to provide the cover image URL** — never finalize with a placeholder. Suggest cover ideas relevant to the article theme and recommend these sites:
+   - [Unsplash](https://unsplash.com), [Pexels](https://pexels.com), [Pixabay](https://pixabay.com) — free stock photos
+   - Hashnode's built-in AI cover generator (dashboard editor)
+   - ChatGPT / DALL-E — AI-generated custom covers
+   - [unDraw](https://undraw.co), [Storyset](https://storyset.com) — free tech illustrations
+   Do not proceed until a real cover image URL is set.
 3. Set final `publishedAt` date
 4. Remove `saveAsDraft: true` from frontmatter
 5. Move file from `articles/drafts/` to `articles/published/`
@@ -159,12 +187,23 @@ Present review findings to the user. Fix any issues before proceeding.
 
 ## Quick Reference
 
+**From scratch** (topic/title):
+
 | Phase | Command | Output |
 |-------|---------|--------|
 | 1 | "outline" or "idea" | `articles/ideas/<slug>.md` |
 | 2 | "draft" or "write" | `articles/drafts/<slug>.md` |
 | 3 | "review" | Updated draft |
 | 4 | "finalize" or "publish" | `articles/published/<slug>.md` |
+
+**From existing article** (file path):
+
+| Step | What happens | Output |
+|------|-------------|--------|
+| 1 | Read file, ask series, detect language | — |
+| 2 | Save as draft with frontmatter | `articles/drafts/<slug>.md` |
+| 3 | Review (fact-check, voice, SEO, technical) | Updated draft |
+| 4 | Finalize | `articles/published/<slug>.md` |
 
 ## Files to read before writing
 
