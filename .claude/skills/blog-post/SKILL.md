@@ -179,9 +179,14 @@ Present review findings to the user. Fix any issues before proceeding.
 4. Remove `saveAsDraft: true` from frontmatter
 5. Move file from `articles/drafts/` to `articles/published/`
 6. Delete the outline from `articles/ideas/` (no longer needed)
-7. **Do NOT commit yet** — confirm with the user first, as committing to `articles/published/` triggers auto-publish
+7. **Commit and push** to git
+8. **Publish via API** — git push does NOT publish (GitHub App is not configured). Always run:
+   ```bash
+   python3 scripts/hashnode-api.py post publish articles/published/<slug>.md --series <series_id>
+   ```
+9. **Verify publication** — run `python3 scripts/hashnode-api.py post get <post_id>` to confirm it's live
 
-**Output**: `articles/published/<slug>.md` ready for commit
+**Output**: Article published and verified on Hashnode
 
 ---
 

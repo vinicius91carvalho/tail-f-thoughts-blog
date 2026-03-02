@@ -4,9 +4,9 @@
 
 - **Blog name**: tail -f thoughts
 - **URL**: https://tail-f-thoughts.hashnode.dev
-- **Platform**: Hashnode with GitHub-as-source integration
+- **Platform**: Hashnode (publish via API only — GitHub App is NOT configured)
 - **Languages**: Portuguese (BR) primary, English occasional
-- **Repo purpose**: Source of truth for all blog content — commits to `articles/published/` auto-publish via Hashnode GitHub App
+- **Repo purpose**: Source of truth for all blog content — publishing is done via `scripts/hashnode-api.py`, NOT via git push
 
 ## Author Profile
 
@@ -259,7 +259,7 @@ When mentioning any person in an article:
 1. **Never commit `.env`** — it contains API tokens. `.gitignore` blocks it.
 2. **Images**: Prefer uploading to Hashnode CDN and using the returned URL. Local `assets/images/` is for drafts only.
 3. **Slug uniqueness**: Every slug must be unique across the publication. Hashnode reserves slugs permanently — even deleted posts keep their slug.
-4. **Publish via API**: Use `scripts/hashnode-api.py` (preferred) or `scripts/publish.sh`. The GitHub App is not configured. Use `/hashnode` skill for guided API operations.
+4. **Publish ONLY via API**: Git push does NOT publish. The GitHub App is not configured and never was. Always publish using `python3 scripts/hashnode-api.py post publish <file> --series <series_id>`. After publishing, verify with `post get <id>`. Use `/hashnode` skill for guided API operations.
 5. **Frontmatter is sacred**: A missing `saveAsDraft: true` on a draft WILL publish it. Double-check before every commit.
 6. **Use `/blog-post` skill**: It enforces the workflow, voice guidelines, and SEO checklist automatically.
 7. **Always include full settings**: SEO meta tags, table of contents, comments enabled, tags with IDs — never publish a bare post.
