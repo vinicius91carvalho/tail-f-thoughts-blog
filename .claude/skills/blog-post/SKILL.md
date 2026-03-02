@@ -185,6 +185,30 @@ Present review findings to the user. Fix any issues before proceeding.
 
 ---
 
+### Phase 5: LinkedIn Post
+
+**Goal**: Generate a LinkedIn post to promote the article.
+
+After the article is finalized (Phase 4), always generate a LinkedIn promotion post.
+
+**Rules**:
+- **Language**: Always Portuguese (BR) — the author's LinkedIn audience is Portuguese-speaking
+- **Tone**: Same conversational voice as the blog — informal, direct, like telling a friend. Not corporate LinkedIn-speak.
+- **Length**: 400-600 characters MAX. Be succinct. No walls of text, no bullet-point lists, no detailed breakdowns — that's what the article is for.
+- **Structure**:
+  1. Hook: personal pain point or situation that grabs attention (first 2 lines are visible before "see more")
+  2. Brief insight: 1-2 sentences summarizing what you learned or changed (don't explain the whole article)
+  3. Link to the article
+  4. 3 hashtags max
+- **Include**: Link to the article (`https://tail-f-thoughts.hashnode.dev/<slug>`)
+- **Hashtags**: 3 max, at the end, no line break before them
+- **Anti-corporate patterns**: No "thrilled to announce", "excited to share", "proud to present", no arrows (→), no numbered lists, no emoji. Write like a quick message to a friend.
+- **Emoji usage**: Zero. No emoji.
+
+**Output**: LinkedIn post text presented to the user, ready to copy-paste.
+
+---
+
 ## Quick Reference
 
 **From scratch** (topic/title):
@@ -195,6 +219,7 @@ Present review findings to the user. Fix any issues before proceeding.
 | 2 | "draft" or "write" | `articles/drafts/<slug>.md` |
 | 3 | "review" | Updated draft |
 | 4 | "finalize" or "publish" | `articles/published/<slug>.md` |
+| 5 | "linkedin" or automatic | LinkedIn post text (PT-BR) |
 
 **From existing article** (file path):
 
@@ -204,6 +229,7 @@ Present review findings to the user. Fix any issues before proceeding.
 | 2 | Save as draft with frontmatter | `articles/drafts/<slug>.md` |
 | 3 | Review (fact-check, voice, SEO, technical) | Updated draft |
 | 4 | Finalize | `articles/published/<slug>.md` |
+| 5 | LinkedIn post | LinkedIn post text (PT-BR) |
 
 ## Files to read before writing
 
