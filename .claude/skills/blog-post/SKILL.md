@@ -214,6 +214,36 @@ After the article is finalized (Phase 4), always generate a LinkedIn promotion p
 
 ---
 
+### Phase 6: Reddit & X Posts
+
+**Goal**: Generate ready-to-post content for Reddit and X (Twitter) to promote the article.
+
+After the LinkedIn post (Phase 5), always generate both a Reddit post and an X post.
+
+#### Reddit post
+Follow the rules in `CLAUDE.md > Social Media Posts > Reddit post rules`. Structure:
+
+1. **Title**: Relatable hook — "I [did X]. Here's [what I learned]." Not clickbait.
+2. **Suggested subreddit(s)**: Pick 1-2 relevant subs (e.g., r/ClaudeAI, r/ChatGPTCoding, r/LocalLLaMA, r/programming)
+3. **Suggested flair**: Based on the target subreddit
+4. **Body**:
+   - Open with a personal pain point (2-3 sentences)
+   - Deliver the key insights directly — code snippets, configs, concrete tips
+   - Blog link at the bottom as "longer version with more detail"
+   - End with a discussion question
+5. **No product/startup mentions**: Strip CauseFlow or any side-project references
+
+#### X (Twitter) post
+Follow the rules in `CLAUDE.md > Social Media Posts > X post rules`. Structure:
+
+- Single tweet (280 chars max) OR short thread (2-3 tweets) if content demands it
+- Hook + key insight + link + 2-3 hashtags
+- Zero emoji, conversational tone
+
+**Output**: Reddit post (title + body + subreddit + flair) and X post text, both presented to the user ready to copy-paste.
+
+---
+
 ## Quick Reference
 
 **From scratch** (topic/title):
@@ -225,6 +255,7 @@ After the article is finalized (Phase 4), always generate a LinkedIn promotion p
 | 3 | "review" | Updated draft |
 | 4 | "finalize" or "publish" | `articles/published/<slug>.md` |
 | 5 | "linkedin" or automatic | LinkedIn post text (PT-BR) |
+| 6 | "reddit", "x", or automatic | Reddit + X post texts |
 
 **From existing article** (file path):
 
@@ -235,6 +266,7 @@ After the article is finalized (Phase 4), always generate a LinkedIn promotion p
 | 3 | Review (fact-check, voice, SEO, technical) | Updated draft |
 | 4 | Finalize | `articles/published/<slug>.md` |
 | 5 | LinkedIn post | LinkedIn post text (PT-BR) |
+| 6 | Reddit + X posts | Reddit + X post texts |
 
 ## Files to read before writing
 

@@ -254,6 +254,33 @@ When mentioning any person in an article:
 - **Publish once, update via API** — use `updatePost` mutation for edits, never delete and recreate
 - **Contact hello@hashnode.com** if a post gets flagged or archived
 
+## Social Media Posts (Post-Publish)
+
+After every article is published, generate ready-to-post content for **Reddit** and **X (Twitter)**. Present both to the author at the end of the publishing flow, alongside the LinkedIn post.
+
+### Reddit post rules
+- **Self-contained value**: The post body must deliver the article's key insights directly — never just drop a link
+- **Lead with pain**: Open with a relatable problem or personal anecdote from the article
+- **Key takeaways in the body**: Summarize the main points with enough detail to be useful standalone (code snippets, configs, concrete tips)
+- **Blog link at the bottom**: "I wrote a longer version with more detail here: [link]" — optional further reading, not the hook
+- **End with a discussion question**: Invite community engagement
+- **Suggest flair and subreddit**: Recommend target subreddit(s) and appropriate flair
+- **Same voice as the blog**: Conversational, first-person, honest — not marketing copy
+- **No product/startup mentions**: Strip any CauseFlow or side-project references to avoid promotional flags
+- **Match article language**: EN article → EN post, PT article → PT post
+- **Anti-AI patterns apply**: Same blacklisted phrases as blog posts
+- **Title format**: Relatable hook, not clickbait — "I [did X]. Here's [what I learned]." works well
+
+### X (Twitter) post rules
+- **Max 280 characters** per tweet (suggest a short thread of 2-3 tweets if the content demands it)
+- **Punchy and conversational**: Like texting a dev friend about something you figured out
+- **Include the blog link**: X auto-shortens URLs to ~23 chars, account for that in the char count
+- **2-3 hashtags max**: Relevant to the topic
+- **Zero emoji**: Matches author voice
+- **Match article language**: EN article → EN post, PT article → PT post
+- **No corporate tone**: No "excited to share" / "just published" / "check out my latest"
+- **Hook first**: The first line must grab attention — the rest is optional context
+
 ## Important Notes
 
 1. **Never commit `.env`** — it contains API tokens. `.gitignore` blocks it.
