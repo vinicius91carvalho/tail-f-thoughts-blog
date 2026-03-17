@@ -144,7 +144,7 @@ The system has three specialized AI agents, each with strict boundaries. Think o
 ```mermaid
 graph TD
     O["Orchestrator<br/>The Project Manager<br/>Delegates, coordinates, merges<br/>Never writes code"]
-    O -->|"Sprint spec"| E1["Sprint Executor 1<br/>The Builder<br/>Writes code in isolation<br/>Can't delegate to others"]
+    O -->|"Sprint spec"| E1["Sprint Executor 1<br/>The Builder<br/>Writes code in isolation<br/>Cannot delegate to others"]
     O -->|"Sprint spec"| E2["Sprint Executor 2<br/>The Builder<br/>Works in parallel<br/>Own copy of the code"]
     O -->|"Review merged code"| CR["Code Reviewer<br/>The Inspector<br/>Read-only -- cannot edit<br/>Reports issues, never fixes them"]
 
@@ -174,7 +174,7 @@ AI makes this worse. Agents excel at local correctness - they'll make their spri
 
 The fix is an `INVARIANTS.md` file at the project root that defines every cross-cutting concept as a machine-verifiable contract:
 
-```markdown
+```
 ## User Session
 - **Owner:** auth module
 - **Preconditions:** valid JWT in request header

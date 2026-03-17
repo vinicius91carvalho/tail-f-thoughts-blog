@@ -121,6 +121,11 @@ graph LR
 ```
 ````
 
+**Hashnode mermaid rules:**
+- **No apostrophes** inside node labels — Hashnode's mermaid renderer (v11) chokes on `'`. Use `Cannot` instead of `Can't`, `does not` instead of `doesn't`, etc.
+- **No `markdown` language hint** on code blocks — Hashnode may try to render it as a diagram. Use plain ` ``` ` (no language) or ` ```text ` instead.
+- When replacing `--` with `-` in article text, **skip mermaid blocks** — `--` is valid mermaid syntax inside node labels and edge definitions.
+
 ## Fact-Checking Rule
 
 **Every claim, number, date, and person reference in an article MUST be verified before publishing.**
